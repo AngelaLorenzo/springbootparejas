@@ -1,4 +1,4 @@
-/*package com.example.demo.models;
+package com.example.demo.models;
 
 import java.sql.Date;
 
@@ -67,4 +67,4 @@ public void setFecha(Date fecha) {
  
 ////// aqui van los getters y setters (los omito para que sea más legible
 
-}*/
+}
