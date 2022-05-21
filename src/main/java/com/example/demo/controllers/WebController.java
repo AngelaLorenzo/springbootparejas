@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+/*package com.example.demo.controllers;
 
 import java.text.MessageFormat;
 
@@ -22,4 +22,4 @@ public class WebController {
        Object params[] = {pelicula, año};
        return MessageFormat.format("Has elegido la película {0} del año {1}", params);
    }
-}
+}*/
