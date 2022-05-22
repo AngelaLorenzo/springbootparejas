@@ -1,6 +1,5 @@
 package com.example.demo.controllers;
 
-import java.text.MessageFormat;
 import java.util.ArrayList;
 
 import com.example.demo.models.Movie;
