@@ -19,6 +19,12 @@ public class Main {
    TranslationService translationService;
 
 
+    // http://localhost:8080/
+    @GetMapping("/")
+    public String greet(){
+        return "Servidor backend de Rafael Costas y Ángela Lorenzo<br/>";
+    }
+
     //ejercicio 1
     @GetMapping("/contar/{word}")
     public String count(@PathVariable String word){
@@ -78,7 +84,7 @@ public class Main {
 
    //ejercicio 5
    
-   @GetMapping("/translate/{phrase}")
+   @GetMapping("/traduce/{phrase}")
       public String doTranslation(@PathVariable String phrase){
         Traducir p = translationService.getTraducir(phrase);
         return p.responseData.translatedText;
