@@ -57,12 +57,12 @@ public class Main {
     //ejercicio 2 (falta base de datos)
    //http://localhost:8080/guarda?pelicula=Spiderman&año=2007
     @GetMapping("/guarda")
-   public String addMovie(@RequestParam String nameMovie,@RequestParam String ageMovie){
+   public String addMovie(@RequestParam String nombre,@RequestParam String año){
       Movie movie = new Movie();
-      movie.setName(nameMovie);
-      movie.setAge(ageMovie);
+      movie.setName(nombre);
+      movie.setAge(año);
       movieService.saveMovie(movie);
-       return "Has essrito la película {0} del año {1}";
+       return "Has esrito la película {0} del año {1}";
    }
 
 
